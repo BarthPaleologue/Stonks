@@ -47,17 +47,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
+            android:layout_margin="5dp"
             android:gravity="center">
 
             <Button
-                android:id="@+id/convertButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:text="@string/invert"
+                app:icon="@drawable/ic_baseline_swap_vert_24"
+                android:onClick="invert"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/convertButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:onClick="chooseRate"
-                android:rotation="0"
-                android:rotationX="0"
-                android:rotationY="0"
                 android:text="@string/choose_rate"
                 app:icon="?android:attr/actionModeFindDrawable" />
         </LinearLayout>
@@ -65,17 +71,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_weight="48">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
+                android:id="@+id/toCurrency"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:drawablePadding="8dp"
                 android:gravity="center"
+                android:onClick="copyResult"
                 android:textSize="50sp"
                 android:textStyle="bold"
-                android:onClick="copyResult"/>
+                app:drawableLeftCompat="?attr/actionModeCopyDrawable" />
         </LinearLayout>
 
     </LinearLayout>

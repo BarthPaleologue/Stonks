@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,35 +23,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/from" />
+                    android:text="@string/from"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="16dp"/>
 
                 <RadioButton
                     android:id="@+id/fromEuro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/euro_symbol"
-                    android:checked="true"/>
+                    android:checked="true"
+                    android:text="@string/euro_symbol" />
 
                 <RadioButton
                     android:id="@+id/fromPound"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pound_symbol"
-                    android:checked="false"/>
+                    android:checked="false"
+                    android:text="@string/pound_symbol" />
 
                 <RadioButton
                     android:id="@+id/fromDollar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/dollar_symbol"
-                    android:checked="false"/>
+                    android:checked="false"
+                    android:text="@string/dollar_symbol" />
             </RadioGroup>
 
             <RadioGroup
@@ -65,7 +67,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/to" />
+                    android:text="@string/to"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="16dp"/>
 
                 <RadioButton
                     android:id="@+id/toEuro"
@@ -96,7 +100,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|bottom"
             android:onClick="sendBackData"
-            android:text="@string/convert_button" />
+            android:text="@string/convert_button"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

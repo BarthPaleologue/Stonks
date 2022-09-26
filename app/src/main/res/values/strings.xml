@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Stonks</string>
-    <string name="convert_button">Convert</string>
+    <string name="convert_button">Choose</string>
     <string name="euro_symbol">€</string>
     <string name="dollar_symbol">$</string>
     <string name="pound_symbol">£</string>
@@ -9,4 +9,6 @@
     <string name="enter_amount">Enter amount...</string>
     <string name="amount">0</string>
     <string name="choose_rate">Choose Rate</string>
+    <string name="invert">Invert</string>
+    <string name="_0">0</string>
 </resources>
