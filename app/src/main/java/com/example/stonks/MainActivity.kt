@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        findViewById<EditText>(R.id.startingAmount).requestFocus()
         findViewById<EditText>(R.id.startingAmount).addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 if (getStartingAmount() > 1000000) rireDeDroite()
